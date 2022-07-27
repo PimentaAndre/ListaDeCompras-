@@ -1,0 +1,65 @@
+ produtos = this.getproducts() EXEMPLO!! 
+
+   produtos = [ 
+     {
+       name: 'Suco',
+       price: "1,99"
+     },
+     {
+       name: "Feijão",
+       price: "5,40"
+     },
+     {
+       name: "Cuscuz",
+       price: "1,60"
+     },
+     {
+       name: "Cacau em pó",
+       price: "0,90"
+     },
+     {
+       name: "Farinha de trigo",
+       price: "8,90"
+     }
+   ]
+
+
+   exemplo:listaDeCompras = {
+     name:"",
+     price:""
+   }; 
+
+   async junk() {
+     const produtos = [
+       {
+         name: "Suco",
+         price: "1,99"
+       },
+       {
+         name: "Feijão",
+         price: "5,40"
+       },
+       {
+         name: "Cuscuz",
+         price: "1,60"
+       },
+       {
+         name: "Cacau em pó",
+         price: "0,90"
+       },
+       {
+         name: "Farinha de trigo",
+         price: "8,90"
+       }
+     ]
+
+     await this.storageProvider.save(produtos[0])
+     await this.storageProvider.save(produtos[1])
+     await this.storageProvider.save(produtos[2])
+     await this.storageProvider.save(produtos[3])
+     await this.storageProvider.save(produtos[4])
+
+     this.listaCompras = await this.storageProvider.getCompra()
+
+
+   }

@@ -1,14 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Lista de Compras
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="enterInProductPage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
+
+  A soma é: R$ 999999
+
+  <ion-list>
+    <button ion-item *ngFor="let produtos of listaCompras">
+      <li> {{ produtos.name }}, {{produtos.price}}</li>
+    </button>
+  </ion-list>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
+    <button ion-button round full (click)="somaProdutos()"> Somar produtos </button>
   </p>
+
+
+
+
 </ion-content>

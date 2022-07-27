@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastro de Produtos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nome do produto</ion-label>
+      <ion-input type="text" [(ngModel)]="products.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Preço</ion-label>
+      <ion-input type="text" [(ngModel)]="products.price"></ion-input>
+    </ion-item>
+
+    <p>
+      <button ion-button round full (click)="saveProduct()">Cadastrar Produto</button>
+    </p>
+
+    <p>
+      <button ion-button round full (click)="fillFields()"> preencher </button>
+    </p>
+
+  </ion-list>
+
+</ion-content>

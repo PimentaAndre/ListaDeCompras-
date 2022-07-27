@@ -1,0 +1,23 @@
+Criar 2 paginas (uma pagina para mostrar os produtos e outra para adicionar produtos novos); Feito!
+
+A tela de cadastar produtos tera que ter 2 inputs; Feito!
+
+Criar um botão de preencimento automatico (Prenncher os dados do produto); Aleff me ajudaou a criar o botão.
+
+Usar o storage; Feito!
+
+Procurar uma forma da minha lista atualizar quando entrar na pagina. (niceDicks: ciclo de vida de um componente Ionic3)
+
+Criar mais opções para o preenchimento automatico, e ter 3 opçoes de preço randomizado.; FEITO!
+
+Obs: Ver o video de Array novamente e salvar os exemplos e deixar comentarios. Feito!
+
+Salvar uma chave no storage com o nome junk, e o valor dele sera um objeto com o atibuto name sendo igua a junk. FEITO!
+
+Tentar cadastra produtos e mostra na tela.
+
+Toda vez que for adicionar um produto, pegue os produtos antigos e adicione mais um. (push)
+
+Mostrar na tela inicial a soma de todos os produtos, utilizar o Array de produtos para efetuar a soma. (for, forEach, reduce)
+
+Arrumar duplicação de elementos na tela. Feito!
