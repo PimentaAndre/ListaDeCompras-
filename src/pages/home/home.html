@@ -12,17 +12,20 @@
 </ion-header>
 <ion-content padding>
 
-  A soma é: R$ 999999
+  <p> A soma é: R$ {{ somandoProdutos() }}
+  </p>
+
 
   <ion-list>
     <button ion-item *ngFor="let produtos of listaCompras">
-      <li> {{ produtos.name }}, {{produtos.price}}</li>
+      <li> Produto: {{ produtos.name }} <br>
+        Preço: {{produtos.price}} </li>
     </button>
   </ion-list>
 
-  <p>
+  <!-- <p>
     <button ion-button round full (click)="somaProdutos()"> Somar produtos </button>
-  </p>
+  </p> -->
 
 
 

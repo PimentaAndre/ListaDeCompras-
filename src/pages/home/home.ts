@@ -28,19 +28,33 @@ export class HomePage {
     this.navCtrl.push(ProductRegistrationPage);
   }
 
-  somaProdutos() {
+   somandoProdutos() {
 
-    let total = 0;
+    let totalProdutos = 0;
 
-    this.listaCompras.forEach((produto) => {
-      const comVirgula = Number(produto.price)
-      let soma = total + comVirgula
-      console.log(soma);
-    })
-    console.log('Mostrou');
-    console.log(total)
+    this.listaCompras.forEach((product) => {
+      totalProdutos = Number(product.price.replace(',', '.')) + totalProdutos
+
+      // console.log('total', total);
+
+    });
+
+     return Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(totalProdutos);
+
+
+
+    // let test = console.log('aaaaa')
+    
+     
+    
+
+
+    // let totalNum = this.listaCompras
+
+    //   .map(l => parseFloat(l.area.replace(/\./g, '').replace(',', '.')));
+    //   .reduce((price, value) => price + value);
+    // console.log(Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(totalNum));
+
 
   }
-
-
 }
