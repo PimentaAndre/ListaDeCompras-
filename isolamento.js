@@ -1,41 +1,65 @@
-// function mostrar() {
-//     console.log("Olá mundo");
-// }
+// // function mostrar() {
+// //     console.log("Olá mundo");
+// // }
 
-const { findConfigFile } = require("typescript");
+// const { findConfigFile } = require("typescript");
 
-// mostrar();
+// // mostrar();
 
 const pessoas = [
     { name: 'Joao', surname: 'Da Neve', idade: '35' },
     { name: 'Maria', surname: 'Da Neve', idade: '36' },
-    { name: 'Joquimas', surname: 'Da Neve', idade: '37' }
+    { name: 'Joaquim', surname: 'Da Neve', idade: '37' }
 ];
-var objeto = { name: 'Carlos', surname: 'Chico', idade: 2 };
 
-console.log(typeof objeto);
+const novoNovo = {name: 'Carlos', surname: 'Da Neve', idade: '35'}
 
-console.log(objeto);
+pessoas.splice(0,1, novoNovo)
 
-console.log(objeto.name);
+console.log(pessoas)
+// const nameToBeUpdate = 'Jão' // Usar o findIndex na linha 19
 
 
-for (let indice = 0; indice < pessoas.length; indice++) {
+// const index = pessoas.findIndex(pessoa => {
+//     return pessoa.name === 'Joao'
+// })
 
-    console.log(pessoas[indice]);
+// pessoas[index].name = nameToBeUpdate
 
-}
+// console.log('Encontrando pessoa', index)
 
-// let indice = 0;
+// console.log("FindIndex de cria", pessoas);
+let pessoaEncontrada;
 
-// while(indice < pessoas.length) {
+pessoas.forEach(pessoa => {
+    console.log('No forEach', pessoa);
+    if (pessoa.name === 'Joao'){
+        pessoaEncontrada = pessoa
+    } 
+})
 
-//     console.log(pessoas[indice])
-//     indice++
-// }
+// const novaPessoa = pessoas.find(pessoa => {
+//     console.log(pessoa);
+//     return pessoa.name === 'Joao'
+// })
 
-console.log('Aqui é o forEach')
+console.log('pessoaEncontrada', pessoaEncontrada);
+// novaPessoa.name = nameToBeUpdate
 
-pessoas.forEach((pessoa) => {
-    console.log(pessoa.surname);
-} )
+// console.log('Encontrando pessoa', novaPessoa)
+// console.log('Pessoa Jão', pessoas);
+
+// const newName = 'João atualizado'
+
+// const pessoa = pessoas[0]
+
+// console.log('Aqui é o forEach', pessoa)
+
+// // pessoa.forEach((pessoa) => {
+// //     console.log(pessoa.surname);
+// // } )
+
+// pessoa.name = newName
+
+// console.log('Pessoa João', pessoas);
+

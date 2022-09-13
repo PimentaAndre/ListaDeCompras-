@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edição de Categoria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Categoria</ion-label>
+    <ion-input type="text" [(ngModel)]="category.name"></ion-input>
+  </ion-item>
+
+
+  <ion-list>
+    <div ion-item *ngFor="let category of Categoria">
+      <li>
+        {{category.name}}
+      </li>
+      <button ion-button round (click)="showPrompt()">Editar Local</button>
+
+      <button ion-button round color="danger" (click)="deleteCategory()">
+        <ion-icon name="trash"> Deletar </ion-icon>
+      </button>
+    </div>
+
+    <button ion-button round full (click)="saveCategory()">Salvar Categoria</button>
+
+    <button ion-button round full (click)="fillFields()">Preencher Categoria</button>

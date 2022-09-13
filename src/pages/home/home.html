@@ -12,22 +12,45 @@
 </ion-header>
 <ion-content padding>
 
-  <p> A soma é: R$ {{ somandoProdutos() }}
+  <p>
+    A soma é: R$ {{ somandoProdutos() }}
   </p>
 
+  <p>
+    Total de Itens:{{totalDeItens()}}
+  </p>
 
   <ion-list>
-    <button ion-item *ngFor="let produtos of listaCompras">
+
+    <div ion-item *ngFor="let produtos of listaCompras">
+
       <li> Produto: {{ produtos.name }} <br>
-        Preço: {{produtos.price}} </li>
+        Preço: {{produtos.price}} <br>
+
+        <div ion-item *ngFor="let local of produtos.supermarkets">
+      <li>
+        Local: {{local.place}}
+      </li>
+    </div>
+    </li>
+
+    <button ion-button round (click)="enterInProductPage(produtos)"> Editar </button>
+
+    <button ion-button round color="danger" (click)="deleteProduct(produtos)">
+      <ion-icon name="trash"> Deletar </ion-icon>
     </button>
+
+    <button ion-button round (click)="enterInCategoryPage()"> Adicionar Categoria</button>
+
+    </div>
+
+    <p>
+
+
+    </p>
+
+
   </ion-list>
-
-  <!-- <p>
-    <button ion-button round full (click)="somaProdutos()"> Somar produtos </button>
-  </p> -->
-
-
 
 
 </ion-content>

@@ -1,23 +1,48 @@
-Criar 2 paginas (uma pagina para mostrar os produtos e outra para adicionar produtos novos); Feito!
+Criar 2 paginas (uma pagina para mostrar os produtos e outra para adicionar produtos novos); ✅ Concluida em junho
 
-A tela de cadastar produtos tera que ter 2 inputs; Feito!
+A tela de cadastar produtos tera que ter 2 inputs; ✅ Concluida em junho
 
-Criar um botão de preencimento automatico (Prenncher os dados do produto); Aleff me ajudaou a criar o botão.
+Criar um botão de preencimento automatico (Prenncher os dados do produto); ✅ (Feito com Ajuda do Aleff) Concluida em junho
 
-Usar o storage; Feito!
+Usar o storage; ✅ Concluida em junho
 
-Procurar uma forma da minha lista atualizar quando entrar na pagina. (niceDicks: ciclo de vida de um componente Ionic3)
+Procurar uma forma da minha lista atualizar quando entrar na pagina. (niceDicks: ciclo de vida de um componente Ionic3) ✅ Concluida em junho
 
-Criar mais opções para o preenchimento automatico, e ter 3 opçoes de preço randomizado.; FEITO!
+Criar mais opções para o preenchimento automatico, e ter 3 opçoes de preço randomizado.; ✅ Concluida em junho
 
-Obs: Ver o video de Array novamente e salvar os exemplos e deixar comentarios. Feito!
+Obs: Ver o video de Array novamente e salvar os exemplos e deixar comentarios. ✅ Concluida em junho
 
-Salvar uma chave no storage com o nome junk, e o valor dele sera um objeto com o atibuto name sendo igua a junk. FEITO!
+Salvar uma chave no storage com o nome junk, e o valor dele sera um objeto com o atibuto name sendo igua a junk. ✅ Concluida em junho
 
-Tentar cadastra produtos e mostra na tela.
+Tentar cadastra produtos e mostra na tela. ✅ Concluida em junho
 
-Toda vez que for adicionar um produto, pegue os produtos antigos e adicione mais um. (push)
+Toda vez que for adicionar um produto, pegue os produtos antigos e adicione mais um. (push) ✅ Concluida em junho
 
-Mostrar na tela inicial a soma de todos os produtos, utilizar o Array de produtos para efetuar a soma. (for, forEach, reduce)
+Mostrar na tela inicial a soma de todos os produtos, utilizar o Array de produtos para efetuar a soma. (for, forEach, reduce) ✅ Concluida em junho
 
-Arrumar duplicação de elementos na tela. Feito!
+Arrumar duplicação de elementos na tela. ✅ Concluida em junho
+
+Arrumar a minha função de preenchimento automatico. ✅ Concluida em 08/08/2022
+
+Mostrar a quantidiade de itens na minha lista. ✅ Concluida em 08/08/2022
+
+Mostrar os Supermercados que eu comprei o produto e mostrar os outros no qual eu encontrei esse mesmo produto.✅ (Precisou de Ajuda) Concluida em 18/08/2022
+
+Ao apertar o botão de cadastar produtos o atributo local tera de ser um array com os Supermercados que tem como exemplo. (Em andamento) ✅ Concluida em 18/08/2022
+Os Supermercados exemplos são: Açaí, Povo e Pão de açucar
+
+Editar o nome de algum input Supermercados errado, antes de ser cadastrado. ✅ Concluido em 25/08/2022
+
+Editar o nome de algum input produto errado após o cadastro. ✅ concluida em 31/08/22
+
+Deletar um produto. ✅ Concluido em 01/09/2022
+
+Dia 08/09/2022
+
+Fazer uma funcionalidade que assim que abrir o aplicativo pela primeira vez cadastrar 2 produtos automaticamente.
+
+Ver por que os id's são os mesmos. 
+
+Criar outra tela para criar categorias. Nessa tela vai ser possível ver, criar, editar e deletar uma categoria.
+
+-------------------------------------------------------------------------------------------------------------------------

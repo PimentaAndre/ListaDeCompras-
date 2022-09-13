@@ -1,0 +1,19 @@
+{
+    "name": "Arroz",
+    "price":"0,90",
+    "categoria":"Alimento",
+    "supermarket": [
+        {
+            "id": "1",
+            "place": "Super do Povo"
+        },
+        {
+            "id": "2",
+            "place": "Super do Povo"
+        },
+        {
+            "id": "3",
+            "place": "Super do Povo"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Cadastro de Produtos</ion-title>
+    <ion-title>Cadastrar Produto</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -10,13 +10,39 @@
 
     <ion-item>
       <ion-label floating>Nome do produto</ion-label>
-      <ion-input type="text" [(ngModel)]="products.name"></ion-input>
+      <ion-input type="text" [(ngModel)]="product.name"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Preço</ion-label>
-      <ion-input type="text" [(ngModel)]="products.price"></ion-input>
+      <ion-input type="text" [(ngModel)]="product.price"></ion-input>
     </ion-item>
+
+    <ion-item>
+      <ion-label floating>Categoria</ion-label>
+      <ion-input type="text" [(ngModel)]="product.category"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Supermercado</ion-label>
+      <ion-input type="text" [(ngModel)]="place"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <div ion-item *ngFor="let local of product.supermarkets">
+        <li>
+          {{local.place}}
+        </li>
+        <button ion-button round (click)="editPlace(local)">Editar Local</button>
+
+        <button ion-button round color="danger" (click)="deletePlace(local)">
+          <ion-icon name="trash"> Deletar </ion-icon>
+        </button>
+      </div>
+
+
+
+    </ion-list>
 
     <p>
       <button ion-button round full (click)="saveProduct()">Cadastrar Produto</button>
@@ -25,6 +51,18 @@
     <p>
       <button ion-button round full (click)="fillFields()"> preencher </button>
     </p>
+
+    <p>
+      <button ion-button round full (click)="saveSuperMarket()">Salvar Supermercado</button>
+    </p>
+
+    <p>
+      <button ion-button round full (click)="editProduct()">Editar Produto</button>
+    </p>
+
+
+
+
 
   </ion-list>
 
